@@ -24,9 +24,9 @@ if game.PlaceId == 5591597781 then
         end
     end
     if map == maplist[1] then
-https://raw.githubusercontent.com/Superfang0726/tds_autostart/main/Harbor
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Superfang0726/tds_autostart/main/Harbor", true))()
     end
     if map == maplist[2] then
-https://raw.githubusercontent.com/Superfang0726/tds_autostart/main/meltdown
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Superfang0726/tds_autostart/main/meltdown", true))()
     end
 end
