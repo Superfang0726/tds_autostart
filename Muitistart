@@ -4,7 +4,7 @@ repeat wait() until game:IsLoaded()
 getgenv().IsMultiStrat = true
 
 getgenv().Maps = {["Harbor"] = {"Minigunner", "DJ Booth", "Commander", "Demoman", "Farm"},["Meltdown"] = {"Minigunner", "DJ Booth", "Commander", "Demoman", "Farm"}}--Note: You can follow this pattern to add as many maps to this as you'd like.
-maplist = {"Map1","Map2","Map3"}--Follow the pattern to add more maps, or remove them.
+maplist = {"Map1","Map2"}--Follow the pattern to add more maps, or remove them.
 
 if game.PlaceId == 3260590327 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
