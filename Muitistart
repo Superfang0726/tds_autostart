@@ -1,0 +1,32 @@
+getgenv().ExecDis = true
+repeat wait() until game:IsLoaded()
+
+getgenv().IsMultiStrat = true
+
+getgenv().Maps = {["Harbor"] = {"Minigunner", "DJ Booth", "Commander", "Demoman", "Farm"},["Meltdown"] = {"Minigunner", "DJ Booth", "Commander", "Demoman", "Farm"}}--Note: You can follow this pattern to add as many maps to this as you'd like.
+maplist = {"Map1","Map2","Map3"}--Follow the pattern to add more maps, or remove them.
+
+if game.PlaceId == 3260590327 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
+end
+
+if game.PlaceId == 5591597781 then
+    map = game:GetService("ReplicatedStorage").State.Map.Value
+    game:GetService("Players").PlayerAdded:Connect(function() --back to lobby if it detected player join the game
+        game:GetService("TeleportService"):Teleport(3260590327)
+        wait(10)
+    end)
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do --back to lobby if there is more than 1 player
+        if i==2 then
+            game:GetService("TeleportService"):Teleport(3260590327)
+            wait(10)
+        end
+    end
+    if map == maplist[1] then
+https://raw.githubusercontent.com/Superfang0726/tds_autostart/main/Harbor
+    end
+    if map == maplist[2] then
+https://raw.githubusercontent.com/Superfang0726/tds_autostart/main/meltdown
+    end
+end
